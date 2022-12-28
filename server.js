@@ -51,7 +51,7 @@ const movies = [
 		stars: ['Kurt Russell', 'Bill Paxton', 'Sam Elliot'],
 	},
 ];
-
+console.log(movies)
 app.get('/api/movies', (req, res) => {
 	res.status(200).json(movies.map(({ id, title, director, metascore }) => ({ id, title, director, metascore })));
 });
